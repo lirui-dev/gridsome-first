@@ -3,7 +3,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div class="container px-4 px-lg-5">
-        <g-link class="navbar-brand" to="/">{{general.title}}</g-link>
+        <g-link class="navbar-brand" to="/">lirui-dev</g-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -86,28 +86,13 @@
   </div>
 </template>
 
-<page-query>
-query {
-  general: allStrapiGeneral {
-    edges {
-      node {
-        title
-        cover {
-          url
-        }
-      }
-    }
-  }
-}
-</page-query>
-
 <script>
 export default {
-  computed: {
-    general() {
-      return this.$page.general.edges[0].node
-    },
-  },
+  // computed: {
+  //   general() {
+  //     return this.$page.general.edges[0].node
+  //   },
+  // },
 }
 </script>
 
